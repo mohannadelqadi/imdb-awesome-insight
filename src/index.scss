@@ -1,0 +1,248 @@
+$primaryBodyBackgroudColor: #141518;
+$yellowBorders: #d19d3c;
+$yellowLable: #c3a600;
+$blackLable: #141518;
+$mainBodyTextColor: #ffffff;
+
+$mainContainer: rgba(0, 0, 0, 0.6);
+$container2: rgba(0, 0, 0, 0.75);
+$container3: rgba(255, 255, 255, 0.6);
+$container4: rgba(95, 95, 95, 0.6);
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $primaryBodyBackgroudColor;
+  color: $mainBodyTextColor;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+div#root {
+  position: relative;
+  width: 100%;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+.homepage-main-vods-holder {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 95%;
+
+  .homepage-vod-card {
+    padding: 5px 10px;
+  }
+
+  .homepage-vod-card,
+  img {
+    width: 370px;
+  }
+
+  img {
+    border: 3px solid $yellowBorders;
+    border-radius: 5px;
+  }
+}
+
+.movie-details-container {
+  background-size: contain;
+  padding: 10px 0;
+  background-repeat: no-repeat;
+
+  h2 {
+    padding: 0;
+    margin: 20px 0 10px 0;
+  }
+
+  ul {
+    margin: 0;
+    display: flex;
+    padding: 0;
+  }
+
+  li {
+    padding-right: 5px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+  .rating {
+    display: flex;
+    padding: 4px 5px;
+    width: 30px;
+    margin-top: 10px;
+    background-color: $yellowLable;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+  }
+
+  .rating-container,
+  .duration-container,
+  .languages-container,
+  .countries-container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .rating-container,
+  .duration-container,
+  .title,
+  .imbd-link-holder {
+    font-weight: bold;
+  }
+
+  .duration-container,
+  .languages-container,
+  .imbd-link-holder,
+  .countries-container {
+    padding-top: 10px;
+  }
+
+  .imbd-link-holder a {
+    text-decoration: none;
+    color: $mainBodyTextColor;
+  }
+
+  .imbd-link-holder img {
+    width: 45px;
+  }
+
+  .website-link-holder img {
+    width: 40px;
+  }
+
+  .website-link-holder {
+    margin-left: 10px;
+  }
+
+  .movie-poster {
+    width: 450px;
+    border-radius: 4px;
+  }
+
+  .links-holder {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .collection-holder,
+  .movie-details-parent {
+    display: flex;
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 15px;
+    background-color: $mainContainer;
+    border-radius: 8px;
+    flex-direction: column;
+  }
+
+  .content-container {
+    display: flex;
+
+    .content {
+      padding: 0 20px;
+    }
+  }
+
+  .collection-holder {
+    background-color: $container2;
+    border: 2px solid $yellowBorders;
+  }
+
+  .geners {
+    font-size: 19px;
+  }
+
+  .prod-com-container {
+    display: flex;
+    border-radius: 5px;
+    background-color: $container3;
+    padding: 10px;
+    min-height: 50px;
+    align-items: center;
+
+    .prod-comp {
+      margin: 0 7px;
+      color: $blackLable;
+      font-weight: bolder;
+
+      img {
+        width: 100px;
+      }
+    }
+  }
+
+  .collection-holder {
+    margin-top: 10px;
+
+    .collection-item img {
+      width: 100px;
+      border: 2px solid $yellowBorders;
+    }
+
+    .collection-item {
+      align-items: center;
+      display: flex;
+    }
+
+    .collection-item a {
+      text-decoration: none;
+    }
+    .collection-item h2 {
+      margin-left: 20px;
+      color: $mainBodyTextColor;
+    }
+  }
+
+  .cast-section {
+    background-color: $container4;
+    margin-top: 25px;
+    border-radius: 5px;
+    // border: 2px solid $yellowBorders
+    border: 2px solid #2d2d2d;
+  }
+
+  .cast-holder {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 98%;
+  }
+
+  .cast-card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px 15px 5px;
+
+    a {
+      text-decoration: none;
+      color: $mainBodyTextColor;
+    }
+
+    .cast-title {
+      padding: 7px 0 0 2px;
+    }
+  }
+
+  .cast-card img {
+    width: 150px;
+    border: 2px solid $yellowBorders;
+    border-radius: 4px;
+  }
+}
